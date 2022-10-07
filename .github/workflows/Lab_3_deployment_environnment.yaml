@@ -36,7 +36,7 @@ jobs:
           az extension add --name containerapp --upgrade
           az provider register --namespace Microsoft.App
           az provider register --namespace Microsoft.OperationalInsights
-
+/*
       - name: Creation du "Resource Group"
         run: |
           az group create \
@@ -53,7 +53,7 @@ jobs:
             --admin-password ${{ env.DB_ADMIN_PASSWORD }} \
             --sku-name GP_Gen5_2 \
             --ssl-enforcement Disabled
-
+*/
       - name: Create Environnment "Azure Container Apps" 
         run: |
           az monitor log-analytics workspace create \
